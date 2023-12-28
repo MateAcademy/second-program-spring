@@ -1,0 +1,11 @@
+rapMusic.id=5
+rapMusic.text=rap music
+
+popMusic.id=10
+popMusic.text=pop music
+
+classicalMusic.id=15
+classicalMusic.text=classical music
+
+musicPlayer.name=Philips
+musicPlayer.volume=100
