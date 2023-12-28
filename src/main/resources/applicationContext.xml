@@ -1,53 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:util="http://www.springframework.org/schema/util"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xmlns:context="http://www.springframework.org/schema/context"-->
+<!--       xmlns:util="http://www.springframework.org/schema/util"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--        http://www.springframework.org/schema/beans/spring-beans.xsd-->
+<!--        http://www.springframework.org/schema/context-->
+<!--        http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">-->
 
-    <context:property-placeholder location="classpath:properties.yaml" />
-    <context:component-scan base-package="ua.klunniy.spring" />
+<!--    <context:property-placeholder location="classpath:properties.yaml" />-->
+<!--    <context:component-scan base-package="ua.klunniy.spring" />-->
 
-<!--    <bean id="musicBean1"-->
-<!--          class="ua.klunniy.spring.model.impl.RapMusic">-->
-<!--&lt;!&ndash;        <constructor-arg value="hello world"/>&ndash;&gt;-->
-<!--        <property name="id" value="${rapMusic.id}"/>-->
-<!--        <property name="text" value="${rapMusic.text}"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="musicBean2"-->
-<!--          class="ua.klunniy.spring.model.impl.PopMusic">-->
-<!--        &lt;!&ndash;        <constructor-arg value="hello world"/>&ndash;&gt;-->
-<!--        <property name="id" value="${popMusic.id}"/>-->
-<!--        <property name="text" value="${popMusic.text}"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="musicBean3"-->
-<!--          class="ua.klunniy.spring.model.impl.ClassicalMusic">-->
-<!--        &lt;!&ndash;        <constructor-arg value="hello world"/>&ndash;&gt;-->
-<!--        <property name="id" value="${classicalMusic.id}"/>-->
-<!--        <property name="text" value="${classicalMusic.text}"/>-->
-<!--    </bean>-->
-
-<!--    <bean id="musicPlayer" class="ua.klunniy.spring.controller.MusicPlayer" scope="prototype"-->
-<!--    init-method="initMethod"-->
-<!--    destroy-method="destroyMethod"-->
-<!--    factory-method="getInstance">-->
-<!--        <constructor-arg ref="musicBean"/>-->
-<!--        <property name="music" ref="musicBean2"/>-->
-<!--        <property name="music">-->
-<!--            <list>-->
-<!--                <ref bean="musicBean1" />-->
-<!--                <ref bean="musicBean2" />-->
-<!--                <ref bean="musicBean3" />-->
-<!--            </list>-->
-<!--        </property>-->
-
-<!--        <property name="name" value="${musicPlayer.name}"/>-->
-<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
-<!--    </bean>-->
-
-</beans>
+<!--</beans>-->
