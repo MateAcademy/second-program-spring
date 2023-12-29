@@ -6,4 +6,6 @@ package ua.klunniy.spring.model;
 public interface Music {
     String[] getSongs();
 
+    Ganr getGanr();
+
 }

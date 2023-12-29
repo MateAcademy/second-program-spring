@@ -18,27 +18,23 @@ import java.util.Random;
 @Component
 @Scope("singleton")
 public class MusicPlayer {
-
-    private Music music1;
-    private Music music2;
+    List<Music> musicList;
 
     @Autowired
-    public MusicPlayer(@Qualifier("classicalMusic") Music music1,
-                       @Qualifier("rockMusic") Music music2) {
-        this.music1 = music1;
-        this.music2 = music2;
+    public MusicPlayer(List<Music> musicList) {
+        this.musicList = musicList;
     }
+
 
     public void playMusics(Ganr ganr) {
         Random random = new Random();
         int id = random.nextInt(3);
 
-        if (ganr == Ganr.CLASSICAL) {
-            String[] songs = music1.getSongs();
-            System.out.println(songs[id]);
-        } else if (ganr == Ganr.ROCK) {
-            String[] songs = music2.getSongs();
-            System.out.println(songs[id]);
+        for (Music music : musicList) {
+            if (music.getGanr() == ganr) {
+                String[] songs = music.getSongs();
+                System.out.println(songs[id]);
+            }
         }
     }
 
